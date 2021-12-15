@@ -368,9 +368,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
+  background-image: url("../img/tic-tac-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 img {
@@ -398,5 +402,99 @@ img {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  margin: auto auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (160px)[3];
+      grid-template-columns: repeat(3, 160px);
+  -ms-grid-rows: (160px)[3];
+      grid-template-rows: repeat(3, 160px);
+  grid-gap: 10px;
+  position: relative;
+}
+
+.box__cell {
+  background: #f7cf7b;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 150px;
+  color: #ff0000;
+}
+
+.box__cell:hover {
+  background: #b17900;
+}
+
+.tic-tac-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.win-gif {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 60%;
+  visibility: hidden;
+}
+
+.no-gif {
+  width: 40%;
+}
+
+.bx-circle {
+  font-size: 110px;
+  color: #464747;
+}
+
+.bx-x {
+  font-size: 150px;
+}
+
+.reset {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

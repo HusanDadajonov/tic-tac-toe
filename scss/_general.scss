@@ -17,9 +17,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
+  background-image: url("../img/tic-tac-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 img {

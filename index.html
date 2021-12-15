@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+  <div class="d-none">
+    <audio id="myAudio"  controls autoplay = "autoplay">
+      <source src="audio/oh-no.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="myAudio2"  controls autoplay = "autoplay">
+      <source src="audio/win.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <img class="win-gif" src="img/youwin.gif" alt="">
+  <img class="win-gif no-gif" src="img/oh-no.png" alt="">
+  <span class="tic-tac-bg"></span>
+  <div class="box">
+  </div>
+  <button class="reset"><i class="bi bi-arrow-clockwise"></i></button>
   <script src="js/main.js"></script>
 </body>
 </html>
