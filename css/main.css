@@ -452,6 +452,16 @@ img {
   opacity: 0.6;
 }
 
+.win--title {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  font-size: 35px;
+  -webkit-transform: translate(-50%, 50px);
+          transform: translate(-50%, 50px);
+  display: none;
+}
+
 .win-gif {
   position: absolute;
   left: 50%;
@@ -484,9 +494,7 @@ img {
   position: absolute;
   right: 20px;
   top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -495,6 +503,9 @@ img {
           justify-content: center;
   background: none;
   border: none;
-  visibility: hidden;
+}
+
+i {
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,15 @@
     opacity: 0.6;
 }
 
+
+.win--title{
+    color: #fff;
+    position:absolute;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%,50px);
+    display: none;
+}
 .win-gif{
     position:absolute;
     left: 50%;
@@ -66,11 +75,14 @@
     position:absolute;
     right: 20px;
     top: 20px;
-    display: flex;
+    display: none;
     align-items:center;
     justify-content: center;
     background: none;
     border: none;
-    visibility: hidden;
+}
+
+i{
+    pointer-events: none;
 }
 
